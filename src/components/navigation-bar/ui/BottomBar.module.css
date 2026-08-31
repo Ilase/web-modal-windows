@@ -1,0 +1,42 @@
+.bottomBar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    /*background: #222;*/
+    color: black;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
+    z-index: 1000;
+
+    border-top: 4px solid black;
+    background: white;
+    box-sizing: border-box;
+}
+
+.windows {
+    display: flex;
+    gap: 4px;
+    min-width: 0;
+    overflow-x: auto;
+}
+
+.windowButton {
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.active {
+    font-weight: 700;
+    border-style: inset;
+}
+
+.minimized {
+    opacity: 0.6;
+}
