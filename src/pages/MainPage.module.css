@@ -6,7 +6,7 @@
     box-sizing: border-box;
 
     background-color: #5c9bd5;
-    background-image: url('public/xpBackground.jpg');
+    background-image: url('/xpBackground.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

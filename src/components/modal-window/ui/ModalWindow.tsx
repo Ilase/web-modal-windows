@@ -57,8 +57,10 @@ export function ModalWindow({title}: ModalWindowProps) {
                     </button>
                 </div>
             </div>
-            <div className={styles.windowContent}>
-                <p>Window Content</p>
+            <div className={styles.windowContentBackface}>
+                <div className={styles.windowContent}>
+                    <p>Window Content</p>
+                </div>
             </div>
         </div>
     )

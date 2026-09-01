@@ -3,19 +3,32 @@
     right: 0;
     left: 0;
     bottom: 0;
-    height: 30px;
+    height: 42px;
     /*background: #222;*/
     color: black;
+    z-index: 1000;
+
 
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 0 8px;
-    z-index: 1000;
+    padding: 5px 10px;
+
+    box-sizing: border-box;
 
     border-top: 4px solid black;
-    background: white;
-    box-sizing: border-box;
+    background: linear-gradient(
+            to bottom,
+            rgb(0 0 0 / 88%),
+            rgb(70 170 220  / 82%)
+    );
+    border-top: 1px solid rgb(255 255 255 / 90%);
+    box-shadow:
+        0 -5px 18px rgb(0 50 100 / 30%),
+        inset 0 1px rgb(255 255 255 / 80%);
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+
 }
 
 .windows {
@@ -40,3 +53,88 @@
 .minimized {
     opacity: 0.6;
 }
+
+.bottomBarWindowLinkButton {
+
+}
+
+.bottomBarMenuButton {
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+            to bottom,
+            rgb(255 255 255 / 95%),
+            rgb(110 205 240 / 75%)
+    );
+
+    border: 1px solid rgb(255 255 255 / 95%);
+    border-radius: 50%;
+
+    box-shadow:
+            0 2px 5px rgb(0 50 100 / 30%),
+            inset 0 1px rgb(255 255 255 / 90%);
+
+    cursor: pointer;
+}
+.bottomBarMenuButton img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.bottomBarMenuButton:hover {
+    filter: brightness(1.1);
+}
+.bottomBarMenuButton:active {
+    box-shadow: inset 0 2px 4px rgb(0 50 100 / 35%);
+}
+
+.programMenu {
+    position: absolute;
+    bottom: 42px;
+    left: 8px;
+
+    min-width: 190px;
+    padding: 8px;
+
+    background: rgb(245 255 255 / 94%);
+    border: 1px solid rgb(0 80 130 / 40%);
+    border-radius: 9px;
+
+    box-shadow: 0 8px 22px rgb(0 40 80 / 35%);
+
+    backdrop-filter: blur(12px);
+}
+
+.programMenuTitle {
+    padding: 4px 8px 8px;
+
+    color: #16496b;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.programButton {
+    width: 100%;
+    padding: 8px;
+
+    color: #16496b;
+    background: transparent;
+    border: 0;
+    border-radius: 5px;
+
+    text-align: left;
+    cursor: pointer;
+}
+
+.programButton:hover {
+    color: white;
+    background: #2686d9;
+}
+

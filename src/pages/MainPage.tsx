@@ -14,8 +14,9 @@ const windows = [
 export function MainPage() {
     return (
         <main>
-            <DesktopGrid/>
             <div className={styles.desktop}>
+                <DesktopGrid/>
+
                 {windows.map((title) => (
                     <ModalWindow key={title} title={title}/>
                 ))}
